@@ -1,11 +1,10 @@
-import useTodos from './useTodos'
 import { useState } from 'react';
 import Todo from "../interfaces/Todo";
 
 
 const useFilteredTodos = (todos: Todo[])=>{
 
-    let [flagFilter, setFlagFilter] = useState(0);
+  let [flagFilter, setFlagFilter] = useState(0);
 
   const allTodo = ()=>{
       setFlagFilter(0);
